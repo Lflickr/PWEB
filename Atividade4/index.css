@@ -1,0 +1,150 @@
+body{
+    padding-bottom: 1%;
+    background-color: #817254;
+    margin: 0;
+    border: 1px solid;
+    box-sizing: border-box;
+}
+.main  {
+    padding: 0% 20%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    background-color: #2E3646;
+    padding: 1% 40%;
+    color: white;
+    width: 100%;
+}
+.header img{
+    height: 90px;
+
+}
+
+#logo{
+    margin-right: 20px;
+}
+.conteiner-box {
+    display: grid;
+    grid-gap: 10px;
+}
+.destaques{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: calc(100%/3) calc(100%/3) calc(100%/3);
+    grid-template-areas: 'a b' 'a c' 'a d';
+}
+.conteiner-box-entreterimento{
+    display: flex;
+    width: 100%;
+    margin: 0 0;
+    gap: 10px;
+    padding: 0px;
+    height: 1%;
+}
+.saude{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: calc(100%/2) calc(100%/2);
+    grid-template-areas: 'a b' 'a c';
+}
+.a{
+    grid-area: a;
+}
+.b{
+    grid-area: b;
+    display: flex;
+}
+.c{
+    grid-area: c;
+    display: flex;
+}
+.d{
+    grid-area: d;
+    display: flex;
+}
+
+              
+
+.box{
+    background-color: rgb(255, 0, 255);
+    padding: 0;
+    text-align: center;
+    overflow-wrap: break-word;
+    text-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    border: 1px solid;
+    align-items: center;
+}
+
+.a1{
+    width: calc((100%/4));
+    margin:0px;
+} 
+
+.a img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+
+
+.b img, .c img, .d img{
+    width: 35%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+} 
+.box p{
+    padding: 1%;
+}
+
+.a1 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.box{
+    background-color:#4C5A75;
+    padding: 0;
+    text-align: center;
+    overflow-wrap: break-word;
+    text-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    border-radius: 5%;
+    border: 1px solid;
+    align-items: center;
+}
+
+.box .a1 p{
+    padding: 20px 0px;
+    font-size: 2px;
+}
+
+.b p, .c p, .d p{
+    font-size: 25px;
+}
+
+.a p{
+    font-size: 20px;
+}
+
+h2{
+    border-bottom: 1px solid;
+    padding: 10px;
+    border-left: 5px solid;
+}
+
+
