@@ -1,0 +1,52 @@
+
+body{
+    background-color: blue;
+    font: normal 18pt "Arial";
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+main{
+    background-color: white;
+    margin:auto;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+}
+
+div#btn{
+    text-align: center;
+}
+
+div#btn input{
+    width: 100px;
+    height: 100px;
+    font-size: large;
+}
+
+div#res{
+    display: flex;
+    column-gap: 15%;
+    margin: 20px 0px;
+}
+
+div#res div p{
+    text-align: center;
+}
+
+div#vs{
+    text-align: center;
+    padding-top: 10%;
+}
+
+main div div img{
+    height: 200px;
+    width: 200px;
+}
+
+div#fim{
+    text-align: center;
+}

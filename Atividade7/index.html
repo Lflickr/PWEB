@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pedra Papel Tesoura</h1>
+    </header>
+    <main>
+        <div id="btn">
+            <input type="button" value="papel" onclick="jogar(0)">
+            <input type="button" value="tesoura" onclick="jogar(1)">
+            <input type="button" value="pedra" onclick="jogar(2)">
+        </div>
+        <div id="res">
+            <div id="jogador">
+                <img id="jogadorimg" src="imagens/interrogacao.png" alt="">
+                <p>Jogador</p>
+            </div>
+            <div id="vs">
+                <h1>VS</h1>
+            </div>
+            <div id="pc">
+                <img id="pcimg" src="imagens/interrogacao.png" alt="">
+                <p>Pc</p>
+            </div>
+        </div>
+        <div id="fim">
+            
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
