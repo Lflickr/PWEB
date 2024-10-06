@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Multifunção</h1>
+    </header>
+    <main>
+        <section id="maior">
+            <h2>Achar o Maior numero</h2>
+            <div>
+                <label>Número 1: <input type="text" id="val1"></label>
+                <label>Número 2: <input type="text" id="val2"></label>
+                <label>Número 3: <input type="text" id="val3"></label>
+            </div>
+            <input type="button" value="maior" onclick="maior()">
+            <p class="res"></p>
+        </section>
+        <section id="ordenar">
+            <h2>Ordenar Numeros</h2>
+            <div>
+                <label>Número 1: <input type="text" id="num1"></label>
+                <label>Número 2: <input type="text" id="num2"></label>
+                <label>Número 3: <input type="text" id="num3"></label>
+            </div>
+            <input type="button" value="Ordenar crescente" onclick="ordenar()">
+            <p class="res"></p>
+        </section>
+        <section id="palindromo">
+            <h2>É um palindromo?</h2>
+            <div id="divPal">
+                <label>Palavra: <input type="text" id="pal"></label>
+            </div>
+            <input type="button" value="Palindromo" onclick="palindromo()">
+            <p class="res"></p>
+        </section>
+        <section id="triangulo">
+            <h2>É um triangulo?</h2>
+            <div>
+                <label>Lado 1: <input type="text" id="lado1"></label>
+                <label>Lado 2: <input type="text" id="lado2"></label>
+                <label>Lado 3: <input type="text" id="lado3"></label>
+            </div>
+            <input type="button" value="Triangulo" onclick="triangulo()">
+            <p class="res"></p>
+        </section>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>
