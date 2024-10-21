@@ -13,10 +13,6 @@ var altura = prompt("Digite a altura do retangulo")
 var retangulo = new Retangulo(base,altura)
 alert(`A área do retangulo é ${retangulo.calcArea()}`)
 
-function area(){
-    
-}
-
 class Conta{
     constructor(){
         this.nome
