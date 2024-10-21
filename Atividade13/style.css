@@ -1,0 +1,33 @@
+body{
+    background-color: blue;
+    font: normal 18pt "Arial";
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+div#imagem{
+    background-color: white;
+    margin:auto;
+    padding: 15px;
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 1%;
+}
+
+h1{
+    color: white;
+    margin: 1% 39%;
+}
+
+input#btn{
+    text-align: center;
+}
+
+div img{
+    margin:0 35%;
+    height: 200px;
+    width: 250px;
+}
