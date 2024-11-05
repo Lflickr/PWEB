@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: "Kanit", sans-serif; 
+    font-weight: auto;
+    font-style: auto;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+header{
+    display :flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7a9abf;
+    padding: 20px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+button.generic{
+    background-color:green;
+    color: white;
+    /* width: 150px;
+    height: 37px; */
+    padding: 11px 40px;
+    border:10px solid transparent;
+    cursor: pointer;
+    border-radius: 15px;
+
+}
+main{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 50px;
+    background-color: #6888ac;
+    padding: 0px;
+    margin: 0;
+    flex: 1 0 auto;
+}
+    main section{
+        margin: 1% 0;
+        height: 95%;
+        width: 27%;
+        background-color: #b1d1f8;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+        main section div.titulo{
+            text-align: center;
+            padding: 40px;
+            background-color: #8dadd2;    
+            border-radius: 15px 15px 0 0 ;
+
+        }
+
+        main section .corpo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            overflow-y: auto;
+        }
+            main section .corpo .listaCard{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            main section .corpo::-webkit-scrollbar{
+                width: 0px;
+            }
+            
+            main section .corpo .btnAdd{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid;
+                border-radius: 10px;
+                margin:auto;
+                padding: 1% 5%;
+                background: none;
+            }
+
+            main section .corpo .card{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                border-radius: 10px;
+                padding: 1% 5%;
+                background-color: #738dab;
+                width: 100%;
+                
+            }
+                main section .corpo .card .info{
+                   color: #2f2f2f; 
+                }
+
+
+
+#modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #0000005a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+    #modal .box{
+        background-color: #b1d1f8;
+        width: 600px;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+        #modal .box .head{
+            display: flex;
+            justify-content:space-between;
+            background-color: #8dadd2;
+            padding: 5px 15px;
+            border-bottom: black 1px solid;
+        }
+            #modal .box .head span{
+                font-size: 20px;
+                font-weight: 600;
+                color: black;
+            }
+
+            #modal .box .head button{
+                border-radius: 10px;
+                width: 30px;
+                height: 30px;
+                border: none;
+                cursor: pointer;
+                background: none;
+                color:black;
+                font-size: 24px;
+                font-weight: 900;
+            }
+        #modal .box form{
+            padding: 20px;
+        }
+            #modal .box form label{
+                display: block;
+            }
+            #modal .box form .agrupar{
+                display: flex;
+                gap: 15%;
+            }
+
+            #modal .box form .grupo-formulario{
+                margin-bottom: 10px;
+                width: 100%;
+            }
+            #modal .box form #prioridade,
+            #modal .box form #criar-em,
+            #modal .box form #responsaveis,
+            #modal .box form #prazo,
+            #modal .box form #titulo,
+            #modal .box form #descricao{
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding: 10px;
+            }
+            #modal .box .btnArea{
+                display: flex;
+                justify-content: space-evenly;
+                margin: auto;
+                
+            }
+                #modal .box .btnArea #create, 
+                #modal .box .btnArea #edit,
+                #modal .box  .btnArea #excluir{
+                    padding: 0px 30px;
+                    width: 35%;
+                    display: block;
+                    margin-bottom: 2%;
+                }
+                #modal .box .btnArea #create{
+                    margin: 0 3.5% 2% auto;
+                }
+
+            
