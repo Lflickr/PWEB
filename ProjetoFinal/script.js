@@ -126,6 +126,7 @@ function criarCard() {
         </div>
         `
         coluna.innerHTML += card;
+        verificaAtraso(tarefa)
     }
     )
 
@@ -190,4 +191,12 @@ function dropHandler(ev) {
     //ev.target.appendChild(document.getElementById(idTask));
 }
 
-// localStorage.clear()
+function verificaAtraso(tarefa){
+    let agora = new Date
+    if(!moment(tarefa.prazo).isAfter(moment(agora)) && tarefa.status != '3'){
+        //mudar cor do card para vermelho
+        let card = document.getElementById(tarefa.id)
+        card.style.backgroundColor = 'red'
+    }
+    
+}
